@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/images/money.jpg);
+    background-size: 186px;
+    background-repeat: repeat;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 450px;
+    width: 360px;
+    gap: 30px;
+    background-color: #4131c8fc;
+}
+
+.container h2{
+    color: white;
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+.fields{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 1.25rem;
+    color: white;
+    border: none;
+}
+.fields>label{
+    margin: 0 1.2rem;
+}
+.fields>input{
+    margin:0 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border: none;
+}
+
+.fields>input:focus{
+    outline: none;
+    border: none;
+}
+
+button{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 7px;
+    transform: translate(0.25);
+    background-color: rgb(10, 135, 62);
+    border-color: rgba(27, 130, 70, 0.778);
+    color: white;
+}
+
+#clicker:hover{
+    cursor: pointer;
+}
+
+
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#resultStatement{
+    color: #eede53;
+    margin: 0.75rem;
+    font-size: 23px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:450px) {
+    .container{
+        width: 350px;
+        height: 450px;
+    }
+}
